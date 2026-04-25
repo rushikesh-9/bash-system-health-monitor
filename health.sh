@@ -1,0 +1,22 @@
+#!/bin/bash
+echo "============ # SYSTEM HEALTH CHECK # =============="
+echo ""
+echo "Name: Rushikesh Chandanwar"
+echo "Date & Time: $(date)"
+echo "Hostname: $(hostname)"
+echo ""
+echo "_____________CPU HEALTH CHECK_____________"
+CPU_IDLE=$(top -bn1 | grep "Cpu" | awk '{print $8}' | cut -d "." -f1)
+CPU_USED=$((100 - CPU_IDLE))
+echo "CPU IDLE= ${CPU_IDLE}%"
+echo "CPU USED= ${CPU_USED}%"
+echo ""
+echo "_________________UPTIME___________________"
+echo "$(uptime)"
+echo ""
+echo "_________________MEMORY___________________"
+echo "$(free -h)"
+echo ""
+echo "_________________STORAGE___________________"
+echo "$(df -h)"
+echo ""
