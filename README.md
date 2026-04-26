@@ -25,3 +25,6 @@ bash health.sh
 
 ## Environment
 Tested on RHEL 9
+
+## Output Screenshot
+![Health Check Output](screenshot.png)
