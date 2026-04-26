@@ -1,6 +1,6 @@
 # 🖥️ Bash System Health Monitor
 
-Monitors CPU, RAM, Disk, and Services on RHEL9/CentOS.
+Monitors CPU, RAM, Disk on RHEL9/CentOS.
 Auto-saves report. Cron-scheduled every 5 minutes.
 
 ## What it checks
